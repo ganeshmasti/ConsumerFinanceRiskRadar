@@ -83,3 +83,4 @@ The app starts with the bundled offline sample dataset. Users can upload a CSV o
 - Add browser-level Streamlit smoke tests.
 - Add richer natural-language parsing for Ask the Data.
 - Add exportable audit reports for filtered views.
+- Evolve the platform into a fully agentic enterprise solution by integrating LLM-powered reasoning, tool-using agents, multi-agent orchestration (LangGraph/CrewAI/OpenAI Agents), predictive risk intelligence, and autonomous monitoring to enable agents to investigate, collaborate, and deliver real-time decision support.
