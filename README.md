@@ -75,6 +75,7 @@ The app starts with the bundled offline sample dataset. Users can upload a CSV o
 - Risk scores are explainable heuristics, not regulatory findings.
 - Forecasting uses a simple linear trend model and is intended for demo-level directional signals.
 - Uploaded data is processed in-memory, so very large datasets should be pre-filtered before upload.
+- What "Agent" Means in This Project: In the context of this project, an agent is a specialized analytical component responsible for evaluating a particular aspect of the dataset and producing focused insights. These agents collaborate to create a structured, explainable decision-support workflow that transforms raw complaint data into meaningful business and consumer intelligence. While these agents are deterministic and data-driven rather than fully autonomous, they demonstrate how agent-oriented architectures can decompose complex analytical tasks into specialized responsibilities and deliver richer insights than traditional dashboards alone.
 
 ## Roadmap
 - Add live CFPB API ingestion.
