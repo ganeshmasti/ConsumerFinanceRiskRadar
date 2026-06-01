@@ -1,5 +1,12 @@
 # Consumer Finance Complaint Radar
 
+![Consumer Finance Risk Radar banner](assets/readme-banner.png)
+
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-Visualizations-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+![Agentic AI](https://img.shields.io/badge/Agentic_AI-Rule--Based_Risk_Agents-0F4C81?style=for-the-badge)
+
 A polished Streamlit dashboard for exploring CFPB-style consumer complaint data across U.S. financial products.
 
 ## GitHub Description
@@ -53,6 +60,34 @@ The app starts with the bundled offline sample dataset. Users can upload a CSV o
 - `assets/`: brand assets and logo
 - `tests/`: unit tests
 - `docs/`: architecture and user guide
+
+## Architecture
+Full architecture, workflow, component, and user journey diagrams are available in [`docs/diagrams.md`](docs/diagrams.md).
+
+```mermaid
+flowchart TB
+    sample["CFPB-style 25K Complaint Dataset"]
+    upload["Optional CSV / TSV Upload"]
+    loader["Data Loader and Validation<br/>src/data_loader.py"]
+    transform["Transformation Layer<br/>src/transform.py"]
+    analytics["Analytics, Risk Scoring, Forecasting<br/>src/analytics.py"]
+    insights["AI Insights<br/>src/insights.py"]
+    agents["Multi-Agent AI Command Center<br/>src/agents.py"]
+    assistant["Ask-the-Data Assistant<br/>src/assistant.py"]
+    ui["Streamlit Dashboard and Visualizations<br/>streamlit_app.py + src/ui.py"]
+
+    sample --> loader
+    upload --> loader
+    loader --> transform
+    transform --> analytics
+    transform --> insights
+    transform --> agents
+    transform --> assistant
+    analytics --> ui
+    insights --> ui
+    agents --> ui
+    assistant --> ui
+```
 
 ## Repository Topics
 `streamlit`, `python`, `pandas`, `plotly`, `altair`, `consumer-finance`, `cfpb`, `data-visualization`, `risk-analytics`, `financial-services`, `complaint-analysis`, `dashboard`, `forecasting`, `ai-agents`, `public-interest-tech`
