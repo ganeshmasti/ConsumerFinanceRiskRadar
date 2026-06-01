@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="24" fill="#0f4c81"/>
+  <circle cx="60" cy="48" r="20" fill="#2a9d8f"/>
+  <path d="M60 72c-16 0-28 7-28 16v8h56v-8c0-9-12-16-28-16z" fill="#f4a261"/>
+  <text x="60" y="108" font-family="Inter, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Radar</text>
+</svg>
